@@ -1,20 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './EventCard.scss'
+import {all} from '../../globals.js'
+
 
 const EventCard = () => {
+
+const data =all;
+
+
+  
   return (
+  <>
+    {data.map((d) => (
     <div className='o-eventcard'>
         <div className="o-img-cont">
-            <img src="assets/e-card-img.png" alt="" />
+            <img src={d.img} alt="" />
             </div>
+
+            
+      
+          
         <div className="o-text-event-card">
-                <h3 className='title-card'>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>que se dice</p>
+                <h3 className='title-card'>{d.titulo}</h3>
+                <p className='fecha'>{d.fecha}</p>
+                <p className='descripcion'>{d.descripcion}</p>
+                <p>{d.organizador}</p>
             </div>
+
+
             
         </div>
+        ))}
+        </>
   )
 }
 

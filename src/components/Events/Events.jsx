@@ -20,10 +20,7 @@ const Events = () => {
 
       <div className="o-card-events-container">
         <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
-        <EventCard />
+        
       </div>
     </div>
   );

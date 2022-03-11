@@ -33,9 +33,29 @@
    .title-card{
        font-family: $kanit;
        color: $mainGreen;
+       padding: 0 1rem;
+       text-transform: uppercase;
+       margin: 0;
    }
+.fecha{
+  padding: 0 1rem;
+  color: red;
+  margin: 0.1rem 0;
+  font-family: $kanit;
+  font-weight: 400;
+}
+.descripcion{
+  padding: 0 1rem;
+  color: #969696;
+  margin: 0.1rem 0;
+  font-family: $kanit;
+  font-weight: 400;
+}
+
     p{
-        
+        padding: 0 1rem;
+        color: $mainGray;
+        font-weight: 700;
     }
   }
 }
