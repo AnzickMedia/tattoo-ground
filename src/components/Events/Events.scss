@@ -1,0 +1,50 @@
+@import '../../globalStyles.scss';
+.o-events-container{
+    
+    width: 100%;    
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    padding: 2rem 0;
+
+    .o-looking-container{
+        width: 23%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 0 0 15%;
+
+        h2{
+            font-family: $kanit;
+            color: $mainGray;
+        }
+        .o-kanit-green{
+            color: $mainGreen;
+        }
+    }
+
+    .o-filters{
+        width: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 0 15%;
+
+        a{
+            text-decoration: none;
+            font-family: $kanit;
+            color: $mainGray;
+            
+        }
+    }
+
+    .o-card-events-container{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 2rem 15%;
+    }
+}
