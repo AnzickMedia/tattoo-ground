@@ -1,0 +1,57 @@
+@import '../../globalStyles.scss';
+
+.o-carousel-card-cont {
+  width: 22rem;
+  height: 16.68rem;
+  margin: 1rem 1rem;
+  transition: transform .3s;
+  @include mobile {
+    width: 15rem;
+    height: 8.68rem;
+}
+  
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  .o-carousel-card-img {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+
+  .o-carousel-card-texto {
+    width: 22rem;
+    height: 6rem;
+    position: absolute;
+    transform: translate(0%, -104%);    
+    z-index: 1;
+    background-image: linear-gradient(to bottom, #43434300 0%,#43434336 50%, rgba(0, 0, 0, 0.61) 100%);
+    
+    @include mobile {
+       width: 230.5px;
+        
+
+    }
+
+    h2 {
+      color: white;
+      font-family: $kanit;
+      font-weight: 500;
+      text-shadow: 2px 3px 8px rgba(0,0,0,0.45);
+      margin: 0;
+      padding: 0 1rem;
+      
+      
+    }
+    p {
+      color: white;
+      font-family: $kanit;
+      text-shadow: 2px 3px 8px rgba(0,0,0,0.45);   
+      margin: 0 0 1rem 0;  
+      padding: 0 1rem; 
+    }
+  }
+}

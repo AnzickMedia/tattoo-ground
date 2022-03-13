@@ -3,4 +3,14 @@ $sedwick:"Sedgwick Ave Display", cursive;
 $kanit: "Kanit", sans-serif;
 $mainGreen:#4ecca3;
 $mainGray:#393e46;
+$footerColor: #222831;
+
+$width: 475px;
+
+
+@mixin mobile {
+    @media (max-width:#{$width}){
+        @content
+    }
+}
 

@@ -1,31 +1,51 @@
 import React from "react";
 import "./Featured.scss";
-import EventCard from "../EventCard/EventCard";
-import Carousel from 'react-elastic-carousel';
+import Carousel from "react-elastic-carousel";
+import CarouselCard from "../CarouselCard/CarouselCard";
 
-const breakPoints=[
-    { width: 1, itemsToShow: 1},
-    { width: 550, itemsToShow: 2},
-    { width: 768, itemsToShow: 3},
-    { width: 1200, itemsToShow: 4}
-]
 
-const Featured = () => {
-   
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 1 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1024, itemsToShow: 3 },
+  { width: 1440, itemsToShow: 4 },
+];
+
+const Featured = ({titulo,informacion}) => {
+
+
+  const hola = informacion;
   return (
     <div className="o-featured-container">
-      <Carousel breakPoints={breakPoints}>
-        <h1>hola mundo</h1>
-        <h1>hola s</h1>
-        <h1>hola mdundo</h1>
-        <h1>hola mdufffndo</h1>
-        <h1>hola a</h1>
-        <h1>hola munado</h1>
-        <h1>hola muawndo</h1>
+      <div className="o-featured-title">
 
+      <h2>{titulo}</h2>
+      </div>
+
+<div className="o-carousel-container">
+  
+      <Carousel breakPoints={breakPoints}
+      showArrows={true}
+      disableArrowsOnEnd={false}
+      
+      enableMouseSwipe={false}
+      enableAutoPlay={true}
+      autoPlaySpeed={5000}
+      >
+        {hola.map((d)=>(
+        <CarouselCard 
+        img={d.img}
+        artista={d.artista}
+        estudio={d.estudio}
+        
+        />
+        ))}
+       
       </Carousel>
 
-   
+      
+</div>
     </div>
   );
 };

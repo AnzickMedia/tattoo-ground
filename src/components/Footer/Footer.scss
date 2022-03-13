@@ -1,0 +1,79 @@
+@import '../../globalStyles.scss';
+.o-footer{
+    width: 100%;
+    height: 16rem;
+    background-color: $footerColor;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+
+    .o-footer-left{
+        width: 70%;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .o-contact-us{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            width: 30%;
+            height: 100%;
+          
+            h2{
+                margin: 0.3rem;
+                color: $mainGreen;
+                font-family: $kanit;
+                font-style: italic;
+            }
+            h4{
+                margin: 0.3rem;
+                color: #FFFFFF;
+                font-family: $kanit;
+                font-weight: 300;
+            }
+        }
+
+        .o-follow-us{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            width: 30%;
+            height: 100%;
+            
+            h2{
+                margin: 0.3rem;
+                color: $mainGreen;
+                font-family: $kanit;
+                font-style: italic;
+            }
+            h4{
+                margin: 0.3rem;
+                color: #FFFFFF;
+                font-family: $kanit;
+                font-weight: 300;
+            }
+        }
+    }
+    .o-footer-right{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .gray {
+            color: $mainGray;
+            font-family: $sedwick;
+            font-size: 3rem;
+          }
+          .green {
+            color: $mainGreen;
+            font-family: $sedwick;
+            font-size: 3rem;
+          }
+    }
+}

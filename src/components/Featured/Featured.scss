@@ -1,8 +1,30 @@
+@import '../../globalStyles.scss';
+
 .o-featured-container{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50rem;
+   
+
+    .o-featured-title{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 70%;
+        padding: 0 15%;
+        
+        h2{
+            font-family: $kanit;
+            color: $mainGray;
+            font-style: italic;
+        }
+    }
+
+    .o-carousel-container{
+        width: 90%;
+        
+    }
+
 }

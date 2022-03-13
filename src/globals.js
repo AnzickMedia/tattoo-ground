@@ -44,3 +44,146 @@ export const month = [
      
     
 ];
+
+
+export const carouselInfo = [
+    {
+        id:1,
+        artista:"Armando Paredes", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img.png"
+    },
+    {
+        id:1,
+        artista:"Armando Paredes", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img.png"
+    },
+    {
+        id:1,
+        artista:"Armando Paredes", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img.png"
+    },
+    {
+        id:1,
+        artista:"Armando Paredes", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img.png"
+    },
+    {
+        id:1,
+        artista:"Armando Paredes", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img.png"
+    },
+    {
+        id:1,
+        artista:"Armando Paredes", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img.png"
+    },
+    
+     
+    
+];
+
+
+export const carouselInfoTwo = [
+    {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },
+    {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },
+    {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },
+    {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },
+    {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },
+    {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },  {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },
+    {
+        id:1,
+        artista:"Daniel Alvarez", 
+        estudio:"DaniTatto Studio",
+        img:"assets/carousel-card-img-shops.png"
+    },
+    
+     
+    
+];
+
+export const carouselInfoThree = [
+    {
+        id:1,
+        artista:"A1231254552s", 
+        estudio:"Inked T234234234ttoo Shop",
+        img:"assets/carousel-card-img-products.png"
+    },
+    {
+        id:1,
+        artista:"A123123123s", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img-products.png"
+    }, {
+        id:1,
+        artista:"A1231254552s", 
+        estudio:"Inked T234234234ttoo Shop",
+        img:"assets/carousel-card-img-products.png"
+    },
+    {
+        id:1,
+        artista:"A123123123s", 
+        estudio:"Inked Tattoo Shop",
+        img:"assets/carousel-card-img-products.png"
+    }, {
+        id:1,
+        artista:"A1231254552s", 
+        estudio:"Inked T234234234ttoo Shop",
+        img:"assets/carousel-card-img-products.png"
+    },{
+        id:1,
+        artista:"A1231254552s", 
+        estudio:"Inked T234234234ttoo Shop",
+        img:"assets/carousel-card-img-products.png"
+    },
+    {
+        id:1,
+        artista:"A1231254552s", 
+        estudio:"Inked T234234234ttoo Shop",
+        img:"assets/carousel-card-img-products.png"
+    },
+    
+    
+     
+    
+];
