@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.scss";
+import {BrowserRouter as Router,Link} from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -13,13 +14,13 @@ const NavBar = () => {
         <input type="text" placeholder="Search" />
       </div>
       <div className="o-nav-der">
-
+        <Router>
         {/*por ahora usar <a> luego usar react router*/}
-        <a href="!">BROWSE</a>
-        <a href="!">SHOP</a>
-        <a href="!">ARTISTS</a>
-        <a href="!">CONTACT</a>
-
+       <Link to="/browse">BROWSE</Link>
+       <Link to="/shop">SHOP</Link>
+       <Link to="/artists">ARTISTS</Link>
+       <Link to="/contact">CONTACT</Link>
+        </Router>
         <img src="assets/profile.png" alt="" />
       </div>
     </div>
