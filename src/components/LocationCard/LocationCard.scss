@@ -1,0 +1,61 @@
+@import "../../globalStyles.scss";
+
+.o-locationcard-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+  .o-loc-img-cont {
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .o-loc-text-cont {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    .title-loc {
+      font-family: $kanit;
+      color: $mainGreen;
+      padding: 0 1rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .fecha-loc {
+      padding: 0 1rem;
+      color: red;
+      margin: 0.1rem 0;
+      font-family: $kanit;
+      font-weight: 400;
+    }
+    .descripcion-loc {
+      padding: 0 1rem;
+      color: #969696;
+      margin: 0.1rem 0;
+      font-family: $kanit;
+      font-weight: 400;
+    }
+
+    p {
+      padding: 0 1rem;
+      color: $mainGray;
+      font-weight: 700;
+    }
+  }
+}
+.o-line {
+  width: 80%;
+  border-bottom: 0.5px solid #9e9e9e;
+  margin: 1rem;
+}

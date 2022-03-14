@@ -4,7 +4,11 @@ import Events from "./components/Events/Events";
 import Featured from "./components/Featured/Featured";
 import { carouselInfo, carouselInfoTwo, carouselInfoThree } from "./globals.js";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Location from "./components/Location/Location";
+import { all } from "./globals";
+
+
 
 function App() {
   return (
@@ -13,11 +17,12 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/"
+            path="/home"
             element={
               <>
                 <News />
-                <Events />
+                <Events 
+                all={all} />
                 <Featured
                   titulo="Featured Artists"
                   informacion={carouselInfo}
@@ -35,6 +40,7 @@ function App() {
           ></Route>
         </Routes>
       </Router>
+      <Location all={all}/>
       <Footer />
     </div>
   );

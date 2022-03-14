@@ -3,7 +3,7 @@ import "./Events.scss";
 import { ImLocation } from "react-icons/im";
 import EventCard from "../EventCard/EventCard";
 
-const Events = () => {
+const Events = ({all}) => {
   return (
     <div className="o-events-container">
       <div className="o-looking-container">
@@ -19,7 +19,8 @@ const Events = () => {
       </div>
 
       <div className="o-card-events-container">
-        <EventCard />
+        <EventCard 
+        all={all}/>
         
       </div>
     </div>
