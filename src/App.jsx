@@ -16,6 +16,7 @@ function App() {
       <NavBar />
       <Router>
         <Routes>
+          
           <Route
             exact path="/"
             element={
@@ -42,6 +43,7 @@ function App() {
           element={<Location all={all}/>}>
           
           </Route>
+          
         </Routes>
 
         
