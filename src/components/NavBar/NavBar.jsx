@@ -20,6 +20,8 @@ const NavBar = () => {
       <div className="o-nav-der">
        <a href="/browse">BROWSE</a>
        <a href="/">SHOP</a>
+       <a href="/">ARTISTS</a>
+       <a href="/">CONTACT</a>
         
        
        

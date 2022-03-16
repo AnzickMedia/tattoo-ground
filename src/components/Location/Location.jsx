@@ -11,11 +11,11 @@ const Location = ({ all }) => {
   return (
     <div className="o-location-container">
       <div className="o-location-left">
-       <h2>LOCATION</h2>
-       <input type="text" placeholder="Mondongo"/>
+       <h3>LOCATION</h3>
+       <input type="text" placeholder="Location"/>
 
           <FormControl>
-            <h2>DATE</h2>
+            <h3>DATE</h3>
             <RadioGroup
               aria-labelledby="dates"
               defaultValue="Any day"
@@ -52,7 +52,7 @@ const Location = ({ all }) => {
           </FormControl>
          
           <FormControl>
-          <h2>PRICE</h2>
+          <h3>PRICE</h3>
             <RadioGroup
               aria-labelledby="price"
               defaultValue="Any price"
@@ -78,7 +78,7 @@ const Location = ({ all }) => {
           </FormControl>
 
           <FormControl>
-          <h2>FORMAT</h2>
+          <h3>FORMAT</h3>
             <RadioGroup
               aria-labelledby="format"
               defaultValue="Any-format"
