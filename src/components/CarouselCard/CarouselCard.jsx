@@ -4,7 +4,7 @@ import "./CarouselCard.scss";
 
 const CarouselCard = ({informacion,img,artista,estudio}) => {
 
-    const info = informacion;
+
   return (
     <>
       <div className="o-carousel-card-cont">
