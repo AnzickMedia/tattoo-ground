@@ -1,6 +1,6 @@
 import React from "react";
 import "./NavBar.scss";
-import {  Link, BrowserRouter } from "react-router-dom";
+
 
 const NavBar = () => {
 
@@ -18,12 +18,11 @@ const NavBar = () => {
         <input type="text" placeholder="Search" />
       </div>
       <div className="o-nav-der">
-       <BrowserRouter>
-        <Link to='/browse'>BROWSE</Link>
-        <Link to='/'>SHOP</Link>
-        <Link to='/'>ARTISTS</Link>
-        <Link to='/'>CONTACT</Link>
-        </BrowserRouter>
+       <a href="/browse">BROWSE</a>
+       <a href="/">SHOP</a>
+        
+       
+       
         
           {/*por ahora usar <a> luego usar react router*/}
          

@@ -8,22 +8,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Location from "./components/Location/Location";
 import { all } from "./globals";
 
-
-
 function App() {
   return (
     <div>
       <NavBar />
       <Router>
         <Routes>
-          
           <Route
-            exact path="/"
+            exact
+            path="/"
             element={
               <>
                 <News />
-                <Events 
-                all={all} />
+                <Events all={all} />
                 <Featured
                   titulo="Featured Artists"
                   informacion={carouselInfo}
@@ -38,18 +35,11 @@ function App() {
                 />
               </>
             }
-          ></Route>
-           <Route path="/browse"
-          element={<Location all={all}/>}>
-          
-          </Route>
-          
+          />
+          <Route exact path="/browse" element={<Location all={all} />}/>
         </Routes>
-
-        
       </Router>
 
-      
       <Footer />
     </div>
   );
