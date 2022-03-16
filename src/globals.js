@@ -45,6 +45,22 @@ export const all = [
         organizador:"Inked Tattoo",
         img:"assets/e-card-img.png"
     },
+    {
+        id:1,
+        titulo:"lorem ipsuq",
+        fecha:"02-02-2022",
+        descripcion:"The Florida Hotel and Conference. Center. Orlando, Florida. US.",
+        organizador:"Inked Tattoo",
+        img:"assets/e-card-img.png"
+    },
+    {
+        id:1,
+        titulo:"lorem ipsuq",
+        fecha:"02-02-2022",
+        descripcion:"The Florida Hotel and Conference. Center. Orlando, Florida. US.",
+        organizador:"Inked Tattoo",
+        img:"assets/e-card-img.png"
+    },
     
      
     

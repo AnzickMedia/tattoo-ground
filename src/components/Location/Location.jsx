@@ -5,19 +5,22 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
+/*import FormLabel from "@mui/material/FormLabel";*/
 
 const Location = ({ all }) => {
   return (
     <div className="o-location-container">
       <div className="o-location-left">
-       
+       <h2>LOCATION</h2>
+       <input type="text" placeholder="Mondongo"/>
+
           <FormControl>
-            <FormLabel id="dates">DATE</FormLabel>
+            <h2>DATE</h2>
             <RadioGroup
               aria-labelledby="dates"
               defaultValue="Any day"
               name="radio-dates"
+
             >
               <FormControlLabel
                 value="Any day"
@@ -49,7 +52,7 @@ const Location = ({ all }) => {
           </FormControl>
          
           <FormControl>
-            <FormLabel id="price">PRICE</FormLabel>
+          <h2>PRICE</h2>
             <RadioGroup
               aria-labelledby="price"
               defaultValue="Any price"
@@ -73,6 +76,47 @@ const Location = ({ all }) => {
               
             </RadioGroup>
           </FormControl>
+
+          <FormControl>
+          <h2>FORMAT</h2>
+            <RadioGroup
+              aria-labelledby="format"
+              defaultValue="Any-format"
+              name="radio-format"
+            >
+              <FormControlLabel
+                value="Any-format"
+                control={<Radio size="small" />}
+                label="Any format"
+              />
+              <FormControlLabel
+                value="Festival"
+                control={<Radio size="small" />}
+                label="Festival"
+              />
+              <FormControlLabel
+                value="Convention"
+                control={<Radio size="small" />}
+                label="Convention"
+              />
+              <FormControlLabel
+                value="Expo"
+                control={<Radio size="small" />}
+                label="Expo"
+              />
+              <FormControlLabel
+                value="Conference"
+                control={<Radio size="small" />}
+                label="Conference"
+              />
+              <FormControlLabel
+                value="Seminar"
+                control={<Radio size="small" />}
+                label="Seminar"
+              />
+              
+            </RadioGroup>
+          </FormControl>
        
       </div>
       <div className="o-location-middle">
@@ -80,14 +124,14 @@ const Location = ({ all }) => {
       </div>
       <div className="o-location-right">
         {/*OJO VERSION SOLO PARA PRUEBA, INTEGRAR MAP CON LA API OFICIAL DE GOOGLE*/}
-        <iframe
+        <iframe title="iframe map"
           className="imap"
           id="gmap_canvas"
           src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=17&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
+          frameBorder="0"
           scrolling="no"
-          marginheight="0"
-          marginwidth="0"
+          marginHeight="0"
+          marginWidth="0"
         ></iframe>
       </div>
     </div>

@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Routes>
           <Route
-            path="/home"
+            exact path="/"
             element={
               <>
                 <News />
@@ -38,9 +38,16 @@ function App() {
               </>
             }
           ></Route>
+           <Route path="/browse"
+          element={<Location all={all}/>}>
+          
+          </Route>
         </Routes>
+
+        
       </Router>
-      <Location all={all}/>
+
+      
       <Footer />
     </div>
   );
