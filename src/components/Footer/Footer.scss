@@ -44,7 +44,14 @@
             flex-direction: column;
             width: 30%;
             height: 100%;
-            
+
+          .o-social-container{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              width: 100%;
+          }  
             h2{
                 margin: 0.3rem;
                 color: $mainGreen;
@@ -66,7 +73,7 @@
         justify-content: center;
 
         .gray {
-            color: $mainGray;
+            color: white;
             font-family: $sedwick;
             font-size: 3rem;
           }
