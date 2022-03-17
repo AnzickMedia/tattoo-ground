@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Location from "./components/Location/Location";
 import { all } from "./globals";
+import Artists from "./components/Artists/Artists";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             }
           />
           <Route exact path="/browse" element={<Location all={all} />}/>
+
+          <Route exact path="/artists" element={ <Artists/>}/>
+          
         </Routes>
       </Router>
 
