@@ -1,0 +1,44 @@
+@import '../../globalStyles.scss';
+.o-review-container{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    .o-review-card{
+        width: 60%;        
+        border: 1px solid rgb(126, 126, 126);
+        border-radius: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 0.5rem 0;
+
+        .o-img-review{
+     
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .o-right-container{
+        width: 65%;
+        h2{
+            font-family: $kanit;
+            color: $mainGray;
+        }
+        p{
+            font-family: $kanit;
+            color: $mainGray;
+        }
+    }
+
+}

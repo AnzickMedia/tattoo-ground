@@ -3,6 +3,7 @@ import ArtistCard from "../ArtistCard/ArtistCard";
 import EventCard from "../EventCard/EventCard.jsx";
 import "./Artists.scss";
 import { artistas } from "../../globals";
+import Review from "../Review/Review";
 
 const Artists = ({ all }) => {
   const imgJob = artistas;
@@ -27,6 +28,8 @@ const Artists = ({ all }) => {
           </div>
         </div>
       </div>
+
+      <Review/>
     </div>
   );
 };

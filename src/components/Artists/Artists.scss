@@ -1,20 +1,26 @@
 @import '../../globalStyles.scss';
 .o-artists{
     margin-top: 4rem;
+    padding:4rem 0 ;
+
     width: 100%;
-    height: 60rem;
+    /* height: 90rem; */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #eee;
     flex-direction: column;
+    
 
 
     .artistas-jobs-events{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         width: 65%;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #393e46;
+        padding: 0 2.5%;
        
 
         .o-jobs{
@@ -23,7 +29,8 @@
             justify-content:center;
             width: 60%;
             flex-direction: column;
-            height: 30rem;
+          
+            margin-bottom: 2rem;
             h2{
                 color: $mainGray;
                 font-family: $kanit;
@@ -45,10 +52,10 @@
         .o-future-events{
             display: flex;
             align-items: flex-start;
-            justify-content:center;
+            justify-content: center;
             width: 40%;
             flex-direction: column;
-            height: 30rem;
+            /* height: 52rem;*/
             h2{
                 color: $mainGray;
                 font-family: $kanit;
@@ -59,7 +66,7 @@
             .o-future-eventcard-cont{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
                 width: 100%;
                 
                
