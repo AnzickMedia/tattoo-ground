@@ -16,6 +16,7 @@ const Artists = ({ all }) => {
           <h2>Featured Jobs</h2>
           <div className="o-job-img-cont">
             {imgJob.map((d) => (
+              
               <img src={d.imgArtista} alt="job" />
             ))}
           </div>
@@ -30,6 +31,7 @@ const Artists = ({ all }) => {
       </div>
 
       <Review/>
+
     </div>
   );
 };

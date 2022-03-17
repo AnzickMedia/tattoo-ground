@@ -14,9 +14,15 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    background-color: #eeee;
+    @include mobile{
+      height: 25rem;
+          }
+  
 
     img {
       width: 100%;
+      object-fit: contain;
     }
   }
 
@@ -26,17 +32,30 @@
     z-index: 1;
     left: 15%;
     top: 20%;
+    @include mobile{
+      width: 80%;
+      position: absolute;
+      z-index: 1;
+      left: 10%;
+      top: 10%;
+          }
     h1 {
       color: $mainGreen;
       font-family: "Kanit", sans-serif;
       font-style: italic;
       font-weight: 700;
+      @include mobile{
+        font-size: 1.2rem;
+            }
     }
     p {
       color: #fdfdfb;
       text-align: justify;
       font-family: "Kanit", sans-serif;
-      font-weight: 200;
+      font-weight: 400;
+      @include mobile{
+        font-size: 0.8rem;
+            }
     }
     
   }
