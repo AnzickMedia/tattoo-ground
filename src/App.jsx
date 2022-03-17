@@ -8,11 +8,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Location from "./components/Location/Location";
 import { all } from "./globals";
 import Artists from "./components/Artists/Artists";
+import { useState } from "react";
+import Menu from "./components/Menu/Menu";
+
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
-      <NavBar />
+      <NavBar 
+      menuOpen={menuOpen}
+      setMenuOpen={setMenuOpen}
+      />
+       <Menu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
       <Router>
         <Routes>
           <Route

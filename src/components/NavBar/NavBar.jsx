@@ -1,8 +1,10 @@
 import React from "react";
 import "./NavBar.scss";
+import { GiHamburgerMenu} from 'react-icons/gi';
 
 
-const NavBar = () => {
+
+const NavBar = ({menuOpen,setMenuOpen}) => {
 
 
 
@@ -22,6 +24,8 @@ const NavBar = () => {
        <a href="/">SHOP</a>
        <a href="/artists">ARTISTS</a>
        <a href="/">CONTACT</a>
+
+       
         
        
        
@@ -31,6 +35,9 @@ const NavBar = () => {
           
         
         <img src="assets/profile.png" alt="" />
+      </div>
+      <div className="o-hamburguer-container" onClick={() => setMenuOpen(!menuOpen)}>
+      <GiHamburgerMenu size="2rem" color="#393e46"/>
       </div>
       
     </div>

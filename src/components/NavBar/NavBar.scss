@@ -1,4 +1,4 @@
-@import '../../globalStyles.scss';
+@import "../../globalStyles.scss";
 
 .o-nav {
   width: 100%;
@@ -8,50 +8,50 @@
   align-items: center;
   background-color: #fdfdfb;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   top: 0;
 
   .o-nav-izq {
     width: 35%;
-    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mobile{
+      width: 20%;
+          }
 
     .o-title-container {
       display: flex;
       flex-direction: row;
       cursor: pointer;
-      
-    
-      a{
+
+      a {
         text-decoration: none;
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: row;
-       
-        
-      
 
-      .gray {
-        color: $mainGray;
-        font-family: $sedwick;
-        margin: 0;
-        padding: 0;
-       
-        
+        .gray {
+          color: $mainGray;
+          font-family: $sedwick;
+          margin: 0;
+          padding: 0;
+          @include mobile {
+            font-size:1.5rem;
+          }
+        }
+        .green {
+          color: $mainGreen;
+          font-family: $sedwick;
+          margin: 0;
+          padding: 0;
+          @include mobile {
+            font-size: 1.5rem;
+          }
+        }
       }
-      .green {
-        color: $mainGreen;
-        font-family: $sedwick;
-        margin: 0;
-        padding: 0;
-       
-        
-      }
-    }
     }
     input {
       background-image: url("../../img/lupa.png");
@@ -72,6 +72,9 @@
       transition: width 0.4s ease-in-out;
       font-family: $kanit;
       font-weight: 300;
+      @include mobile {
+        display: none;
+      }
     }
     input:focus {
       outline: 0;
@@ -84,6 +87,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mobile{
+      display: none;
+          }
 
     a {
       text-decoration: none;
@@ -102,6 +108,17 @@
       &:hover {
         transform: scale(1.1);
       }
+    }
+  }
+
+  .o-hamburguer-container{
+    display: none;
+    
+    @include mobile{
+      display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
     }
   }
 }

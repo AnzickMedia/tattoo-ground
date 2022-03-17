@@ -77,11 +77,17 @@
             color: white;
             font-family: $sedwick;
             font-size: 3rem;
+            @include mobile{
+                font-size: 1rem;
+                    }
           }
           .green {
             color: $mainGreen;
             font-family: $sedwick;
             font-size: 3rem;
+            @include mobile{
+                font-size: 1rem;
+                    }
           }
     }
 }
