@@ -3,7 +3,7 @@
 .o-artists-card {
   display: flex;
   width: 70%;
-  border: 1px solid black;
+  border: 1px solid $mainGray;
   background-color: white;
   flex-direction: row;
   align-items: center;
@@ -27,11 +27,13 @@
       h2 {
         margin: 0;
         color: $mainGreen;
+        font-family: $kanit;
       }
       h3 {
         font-weight: 400;
           color: $mainGray;
         margin: 0;
+        font-family: $kanit;
       }
     }
     .o-artist-info {
@@ -40,6 +42,7 @@
           color: #9b9b9b;
           font-weight: 400;
         margin: 0;
+        font-family: $kanit;
       }
     }
     .o-artist-location {
@@ -48,11 +51,13 @@
         margin: 0;
         color: $mainGray;
           font-weight: 700;
+          font-family: $kanit;
       }
       p {
         margin: 0;
         text-align: justify;
         color: $mainGray;
+        font-family: $kanit;
       }
     }
   }

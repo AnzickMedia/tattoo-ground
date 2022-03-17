@@ -234,3 +234,24 @@ export const carouselInfoThree = [
      
     
 ];
+
+export const artistas = [
+
+  {
+        id:1,
+        imgArtista:"assets/jobs.png"
+    },
+    {
+        id:1,
+        imgArtista:"assets/jobs.png"
+    },
+    {
+        id:1,
+        imgArtista:"assets/jobs.png"
+    },
+    {
+        id:1,
+        imgArtista:"assets/jobs.png"
+    },
+
+];

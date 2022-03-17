@@ -4,6 +4,8 @@ import { BsFacebook } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import { AiFillTwitterCircle } from "react-icons/ai";
 
+/* FALTA AGREGAR EL MAPEO DE CONSTANTES PARA LLENAR LA CARD*/
+
 const ArtistCard = () => {
   return (
     <div className="o-artists-card">

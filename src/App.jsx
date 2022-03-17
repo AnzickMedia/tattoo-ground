@@ -39,7 +39,7 @@ function App() {
           />
           <Route exact path="/browse" element={<Location all={all} />}/>
 
-          <Route exact path="/artists" element={ <Artists/>}/>
+          <Route exact path="/artists" element={ <Artists all={all}/>}/>
           
         </Routes>
       </Router>
