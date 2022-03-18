@@ -9,8 +9,18 @@
   align-items: center;
   justify-content: space-around;
   height: 23rem;
+
+  @include mobile {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+  }
   .o-img-artist-container {
     width: 35%;
+
+    @include mobile {
+      width: 100%;
+    }
 
     img {
       width: 100%;
@@ -20,6 +30,9 @@
 
   .o-text-and-buttons {
     width: 40%;
+    @include mobile {
+      width: 90%;
+    }
 
     .o-artist-title {
 
@@ -68,6 +81,9 @@
     justify-content: flex-start;
     width: 15%;
     height: 100%;
+    @include mobile {
+      width: 80%;
+    }
 
     button{
         width: 100%;
