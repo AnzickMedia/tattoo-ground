@@ -27,6 +27,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    height: auto;
+    flex-direction: column;
+    
+  }
 
   .o-location-left {
     width: 15%;
@@ -37,7 +42,99 @@
     justify-content: flex-start;
     background-color: #eeeeee;
     padding: 0 1%;
+    
+   
 
+    @include mobile {
+      
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 0;
+      
+      
+    }
+
+    .arrow{
+      display: none;
+      @include mobile {
+        display: block;
+        
+      }
+    }
+
+    .arrow-active{
+      display: none;
+      @include mobile {
+        display: block;
+        transform: rotate(-180deg);
+      }
+    }
+
+    .arrow-dissapear{
+      display: none;
+      @include mobile {
+        display: none;
+        
+      }
+    }
+
+    .o-form-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      form {
+        width: 100%;
+        label {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+
+          input {
+            width: 2rem;
+          }
+          span{
+            font-family: $kanit;
+            color: $mainGray;
+            font-weight: 300;
+          }
+        }
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .o-form-container-activo {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      form {
+        width: 100%;
+        label {
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+
+          input {
+            width: 2rem;
+          }
+          span{
+            font-family: $kanit;
+            color: $mainGray;
+            font-weight: 300;
+          }
+        }
+      }
+
+      
+    }
     h3 {
       text-decoration: none;
       font-family: $kanit;
@@ -76,6 +173,11 @@
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+
+    @include mobile {
+      width: 85%;
+      justify-content: center;
+    }
   }
   .o-location-right {
     width: 30%;
@@ -84,6 +186,14 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem 1rem;
+    @include mobile {
+      width: 90%;
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 1rem;
+    }
 
     .imap {
       width: 100%;
