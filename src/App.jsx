@@ -10,6 +10,7 @@ import { all } from "./globals";
 import Artists from "./components/Artists/Artists";
 import { useState } from "react";
 import Menu from "./components/Menu/Menu";
+import EventLocation from "./components/EventLocation/EventLocation";
 
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
           <Route exact path="/browse" element={<Location all={all} />}/>
 
           <Route exact path="/artists" element={ <Artists all={all}/>}/>
+
+          <Route exact path="/location" element={ <EventLocation/>}/>
           
         </Routes>
       </Router>
