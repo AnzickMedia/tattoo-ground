@@ -11,6 +11,7 @@ import Artists from "./components/Artists/Artists";
 import { useState } from "react";
 import Menu from "./components/Menu/Menu";
 import EventLocation from "./components/EventLocation/EventLocation";
+import Discover from "./components/Discover/Discover";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <>
                 <News />
                 <Events all={all} />
+                <Discover/>
                 <Featured
                   titulo="Featured Artists"
                   informacion={carouselInfo}

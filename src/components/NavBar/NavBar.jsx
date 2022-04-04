@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.scss";
 import { GiHamburgerMenu} from 'react-icons/gi';
 
 
 
+
 const NavBar = ({menuOpen,setMenuOpen}) => {
 
+  const [navColorScroll, setNavColorScroll] = useState(false);
 
+  const changeNavbarColor = () => {
+    if (window.scrollY > 80) {
+      setNavColorScroll(true);
+    } else {
+      setNavColorScroll(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <div className="o-nav">
+    <div className={navColorScroll ? "o-nav-scrolled" : "o-nav"}>
       <div className="o-nav-izq">
         <div className="o-title-container">
           <a href="/">

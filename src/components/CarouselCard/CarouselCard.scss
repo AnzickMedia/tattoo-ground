@@ -1,7 +1,7 @@
 @import '../../globalStyles.scss';
 
 .o-carousel-card-cont {
-  width: 22rem;
+  width: 20rem;
   height: 16.68rem;
   margin: 1rem 1rem;
   transition: transform .3s;
@@ -16,20 +16,26 @@
 
   .o-carousel-card-img {
     width: 100%;
-    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    
     img {
       width: 100%;
+      border-radius: 0.75rem;
+    border: 1px solid #eeeeee;
     }
   }
 
   .o-carousel-card-texto {
     width: 22rem;
     height: 6rem;
-    position: absolute;
-    transform: translate(0%, -104%);    
-    z-index: 1;
-    background-image: linear-gradient(to bottom, #43434300 0%,#43434336 50%, rgba(0, 0, 0, 0.61) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
     
+      
+   
     @include mobile {
        width: 230.5px;
         
@@ -37,19 +43,19 @@
     }
 
     h2 {
-      color: white;
+      color: $mainGray;
       font-family: $kanit;
       font-weight: 500;
-      text-shadow: 2px 3px 8px rgba(0,0,0,0.45);
+  
       margin: 0;
       padding: 0 1rem;
       
       
     }
     p {
-      color: white;
+      color: $mainGray;
       font-family: $kanit;
-      text-shadow: 2px 3px 8px rgba(0,0,0,0.45);   
+     
       margin: 0 0 1rem 0;  
       padding: 0 1rem; 
     }

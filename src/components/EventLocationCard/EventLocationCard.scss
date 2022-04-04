@@ -35,14 +35,22 @@
     }
     .o-text-and-buttons-loc {
       width: 60%;
+      display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+
+
       @include mobile {
         width: 90%;
       }
       .o-event-loc-title {
         margin: 1rem 0;
         h3 {
+          margin: 0;
         }
         p {
+          
         }
       }
 
@@ -50,12 +58,35 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        width: 35%;
 
         .o-box {
           border: 1px solid $mainGray;
+          width: 5rem;
+          height: 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+
+          h3{
+            margin: 0;
+
+          }
+          p{
+            margin: 0;
+          }
         }
       }
       .o-sn-location {
+        margin: 0.5rem 0;
+        .o-sn{
+          margin: 0 0.2rem;
+        }
+        p{
+          margin: 0.5rem 0;
+        }
       }
     }
 
@@ -84,6 +115,10 @@
           justify-content: space-around;
         img{
             width: 15%;
+        }
+        button{
+          width: 12rem;
+          height: 4.199rem;
         }
       }
 

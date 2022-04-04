@@ -67,6 +67,7 @@
                 img{
                     width: 12rem;
                     margin: 0.2rem 0.2rem;
+                    border-radius: 0.75rem;
                     @include mobile {
                         width: 8rem;
                     }
