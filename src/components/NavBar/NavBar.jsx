@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.scss";
 import { GiHamburgerMenu} from 'react-icons/gi';
+import logo from '../../img/logo-fpng.png';
 
 
 
@@ -22,9 +23,10 @@ const NavBar = ({menuOpen,setMenuOpen}) => {
     <div className={navColorScroll ? "o-nav-scrolled" : "o-nav"}>
       <div className="o-nav-izq">
         <div className="o-title-container">
-          <a href="/">
+          <a href="/">{/* 
           <h1 className="gray">TATTO</h1>
-          <h1 className="green">GROUND</h1>
+          <h1 className="green">GROUND</h1> */}
+          <img src={logo} alt="Logo tattoo ground" />
           </a>
         </div>
         <input type="text" placeholder="Search" />
